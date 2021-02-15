@@ -8,7 +8,10 @@
     "@testing-library/user-event": "^12.7.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-icons": "^4.2.0",
     "react-scripts": "4.0.2",
+    "react-swipe-events": "^1.0.3",
+    "scroll-lock": "^2.1.5",
     "web-vitals": "^1.1.0"
   },
   "scripts": {

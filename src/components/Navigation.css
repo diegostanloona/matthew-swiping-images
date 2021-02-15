@@ -1,0 +1,44 @@
+.navigation{
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100vw;
+	z-index: 4;
+}
+
+.navigation-tooltip.hidden{
+	margin-bottom: -100px;
+}
+
+.row{
+	display: flex;
+	flex-direction: row;
+}
+
+.col{
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+	text-align: center;
+}
+
+.navigation-menu svg{
+	margin: 0 auto;
+}
+
+.navigation-menu span{
+	color: #FFFFFF;
+}
+
+.navigation-menu, .navigation-tooltip{
+	background: rgb(0,0,0);
+	background: linear-gradient(0deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 90%);
+	text-align: center;
+	margin-bottom: 0;
+	transition: margin-bottom 0.5s;
+	padding: 20px 5px 5px;
+}
+
+.navigation-menu.hidden{
+	margin-bottom: -100px;
+}

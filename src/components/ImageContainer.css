@@ -1,0 +1,15 @@
+.image{
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.transition-image{	
+	position: fixed;
+	z-index: 2;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}

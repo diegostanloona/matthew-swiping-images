@@ -1,0 +1,20 @@
+.icon-container{
+	opacity: 1;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.23);
+	z-index: 3;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+	transition: opacity 0.25s;
+}
+
+.icon-container svg{
+	margin-top: calc( 50vh - 2.25em);
+}
+
+.icon-container.hide{
+	opacity: 0;
+}

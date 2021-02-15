@@ -1,0 +1,20 @@
+diff --git a/node_modules/react-swipe-events/src/index.js b/node_modules/react-swipe-events/src/index.js
+index 18b2e14..3744fe3 100644
+--- a/node_modules/react-swipe-events/src/index.js
++++ b/node_modules/react-swipe-events/src/index.js
+@@ -33,12 +33,13 @@ class reactSwipeEvents extends React.Component {
+         const delta = this.getDelta(touch)
+         const current = this.getCurrentPosition(touch)
+ 
+-        if (Math.abs(delta.x) > this.props.threshold) {
++        if (Math.abs(delta.x) > this.props.threshold && Math.abs(this.state.originalY - current.y) < this.props.maxDiag) {
++            alert(this.props.maxDiag);
+             if (delta.x > 0) this.props.onSwipedRight && this.props.onSwipedRight(e, this.state.originalX, current.x)
+             if (delta.x < 0) this.props.onSwipedLeft && this.props.onSwipedLeft(e, this.state.originalX, current.x)
+         }
+ 
+-        if (Math.abs(delta.y) > this.props.threshold) {
++        if (Math.abs(delta.y) > this.props.threshold && Math.abs(this.state.originalX - current.x) < this.props.maxDiag) {
+             if (delta.y > 0) this.props.onSwipedDown && this.props.onSwipedDown(e, this.state.originalY, current.y)
+             if (delta.y < 0) this.props.onSwipedUp && this.props.onSwipedUp(e, this.state.originalY, current.y)
+         }
